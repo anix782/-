@@ -1,5 +1,6 @@
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-	
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Dadadadum), music.PlaybackMode.InBackground)
+    basic.showIcon(IconNames.Angry)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music._playDefaultBackground(music.builtInPlayableMelody(Melodies.JumpUp), music.PlaybackMode.InBackground)
